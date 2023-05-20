@@ -2,13 +2,11 @@
 
 A project that allows users and developers to track bugs in various projects. 
 
-**Demo Link - [Here](https://django-bug-tracker-99.herokuapp.com/)**
-![bug_tracker_showcase](https://i.imgur.com/vXvhhcg.png)
 
 ## Technologies Used 
 
 * [Django](https://www.djangoproject.com/) - The Python framework used to create the backend.
-* [PostgreSQL](https://www.postgresql.org/) - Database used to save all of the website's data. 
+* [SQLite3](https://sqlite.org/index.html) - Database used to save all of the website's data. 
 * [Bootstrap 5](https://getbootstrap.com/) - CSS framework used to style the frontend. 
 * [Python](https://www.python.org/) - Backend language 
 * HTML
@@ -51,18 +49,4 @@ A project that allows users and developers to track bugs in various projects.
     # Start development server (localhost:8000)
     $ python manage.py runserver
    
- * To create tags, login at localhost:8000/admin as superuser, select the Tags model, and click add Tag. 
- * The default database is sqlite3. To use PostgreSQL, change the database settings in bugTrackerWebsite/settings.py and add your environment variables 
-
-```
-DATABASES = {
-    'default': {
-        'ENGINE': os.environ.get('DB_ENGINE'),
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT'),
-    }
-}
-```
+ * To create tags, login at localhost:8000/admin as superuser, select the Tags model, and click add Tag.
